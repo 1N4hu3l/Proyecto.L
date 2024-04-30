@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(to right, black,grey);
+    
+}
+
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+}
+
+.izquierda {
+    background-color: black;
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    height: 657px;
+    margin-top: -8px;
+}
+
+.derecha {
+    background-color: grey;
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    height: 657px;
+    margin-top: -8px;
+}
