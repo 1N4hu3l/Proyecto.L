@@ -90,9 +90,9 @@ button{
 }
 
 .form2{
-    border-color: aqua;
-    border-style: solid;
-    border-width: 1px;
+    /**border-color: aqua;*/
+    /**border-style: solid;*/
+    /**border-width: 1px;*/
     width: 300px;
     position: relative;
     top: 20%;
