@@ -2,41 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Document</title>
     <link rel="stylesheet" href="/CSS/styles-l.css">
 </head>
+
 <body>
 
     <div class="contenedor">
+        <div class="item izquierda">
 
-        <div class="left">
-            <img src="/IMG/Diseño-sin-título-svg.svg" alt="" class="center logo">
-        </div>
+            <div class="t-img">
+                <img src="/IMG/Diseño-sin-título-svg.svg" alt="">
 
-        <div class="right">
-
-            <h1 class="titulo">Iniciar sesion</h1>
-
-            <img src="/IMG/user-white.png" alt=""class="center user-l">
-
-            <div class="form2">
-                <form action="" class="form1">
-
-                        <label for="email">Email:</label>
-                        <input type="email" placeholder="example@gmail.com" required>
-
-                        <label for="password">Contraseña:</label>
-                        <input type="password" placeholder="PasswordExample" required>
-
-                        <div class="divbutton">
-                            <button type="submit">Iniciar sesion</button>
-                        </div>
-
-                </form>
             </div>
         </div>
-    </div>
 
-</body>
+        <div class="item derecha">
+            <h1>Iniciar Sesion</h1>
+
+            <form>
+                <label for="correo">Correo :</label>
+                <input type="email" id="correo" required placeholder="example@gmail.com">
+                
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" required placeholder="Example1234">
+                
+                <button type="submit">Iniciar sesión</button>
+            </form>
+
+        </div>
+
+    </div>
+    
 </html>
