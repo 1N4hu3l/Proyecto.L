@@ -1,14 +1,17 @@
-body{
-    background: linear-gradient(to right, black,#16191C);
-    
+html, body{
+    background: linear-gradient(to right, #111111,#16191C);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
 }
 
 .contenedor {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between; /* Distribuye espacio entre divs */
     color: white;
-    justify-content: space-between;
-    
+    min-height: 100%;
+    height: 100%;
 }
 
 .left {
@@ -16,15 +19,17 @@ body{
     flex: 1; /* Ocupa la mitad del espacio disponible */
     height: 657px;
     margin-top: -8px;
-    align-items: left;
+    align-items: center;
 }
 
 .right {
     background-color: #16191C;
     flex: 1; /* Ocupa la mitad del espacio disponible */
-    height: 657px;
+    height: 657px; /* Puedes eliminar esta línea si quieres que el formulario ocupe toda la altura */
     margin-top: -8px;
-    align-items: center;
+    position: relative;
+    width: 100%;
+    
     
 }
 
@@ -33,6 +38,7 @@ body{
 }
 
 .center {
+    /* Puedes eliminar esta clase si no la estás usando en otro lugar */
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -51,10 +57,11 @@ body{
 }
 
 .form1{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin-left:160px;
+    display: flex; /* Mantén esta línea */
+    flex-direction: column; /* Puedes eliminar esta línea */
+    width: 300px; /* Puedes ajustar el ancho del formulario */
+    /* Elimina esta línea para centrar el formulario */
+    /* margin-left:160px; */
 }
 
 label{
@@ -79,15 +86,16 @@ button{
     font-weight: bold;
     width: 200px;
     border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    margin-left: 50px;
 }
 
-.divbutton{
-    display: flex;
-    margin: 20px;
-    justify-content: center;
-    
+.form2{
+    border-color: aqua;
+    border-style: solid;
+    border-width: 1px;
+    width: 300px;
+    position: relative;
+    top: 20%;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
 }
