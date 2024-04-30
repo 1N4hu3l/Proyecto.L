@@ -59,6 +59,11 @@ img{
     
 }
 
+.terms{
+    text-decoration: underline;
+    color: blue;
+}
+
 a{
     text-decoration: none;
     color: black;
