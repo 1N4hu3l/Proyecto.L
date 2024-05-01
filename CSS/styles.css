@@ -61,10 +61,14 @@ img{
 
 .terms{
     text-decoration: underline;
-    color: blue;
+    color: rgb(99, 99, 250);
 }
 
 a{
     text-decoration: none;
     color: black;
+}
+
+.checkbox{
+    border-style: none;
 }

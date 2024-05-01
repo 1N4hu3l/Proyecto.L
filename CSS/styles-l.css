@@ -1,6 +1,7 @@
 .contenedor {
     display: flex;
     height: 765px; /* Altura del contenedor 100% del viewport */
+    font-family: sans-serif;
 }
 
 .item {
