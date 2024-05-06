@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/CSS/registerstyles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro</h1>
+        <form id="registrationForm">
+            <fieldset id="step1">
+                <legend>Paso 1: Datos del Usuario</legend>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="cuil">CUIL:</label>
+                    <input type="text" id="cuil" name="cuil" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <button onclick="nextStep()">Siguiente</button>
+            </fieldset>
+
+            <fieldset id="step2">
+                <legend>Paso 2: Datos del Taller</legend>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="form-group">
+                    <label for="encargado">Nombre del Encargado:</label>
+                    <input type="text" id="encargado" name="encargado" required>
+                </div>
+                <div class="form-group">
+                    <label for="rubro">Rubro:</label>
+                    <select id="rubro" name="rubro" required>
+                        <option value="">Seleccione el Rubro</option>
+                        <option value="Taller Mecánico">Taller Mecánico</option>
+                        <option value="Chapa y Pintura">Chapa y Pintura</option>
+                        <option value="Sacabollos">Sacabollos</option>
+                        <!-- Agrega más opciones según necesites -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">Acepto la política de privacidad</label>
+                </div>
+                <button type="submit">Registrarse</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
