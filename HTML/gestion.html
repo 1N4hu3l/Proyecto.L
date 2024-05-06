@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Órdenes y Facturas</title>
+    <link rel="stylesheet" href="/CSS/gestionstyles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gestión de Órdenes y Facturas</h1>
+        <div class="buttons">
+            <button onclick="showOrders()">Gestión de Órdenes</button>
+            <button onclick="showInvoices()">Gestión de Facturas</button>
+            <button onclick="showDocuments()">Envío de Documentación</button>
+        </div>
+        <div class="table-container" id="ordersTable" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Seguro</th>
+                        <th>SINIESTRO</th>
+                        <th>ORDEN</th>
+                        <th>FECHA</th>
+                        <th>Fecha estimada</th>
+                        <th>Fecha finalización</th>
+                        <th>Vehículo</th>
+                        <th>Patente</th>
+                        <th>Propietario</th>
+                        <th>Concepto</th>
+                        <th>Importe</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ejemplos de órdenes -->
+                    <tr>
+                        <td>Seguro de Ejemplo</td>
+                        <td>12345</td>
+                        <td>1</td>
+                        <td>2024-05-01</td>
+                        <td>2024-05-03</td>
+                        <td onclick="setCompletionDate(this)">2024-05-05</td>
+                        <td>Ford Fiesta</td>
+                        <td>ABC123</td>
+                        <td>Juan Pérez</td>
+                        <td>Reparación de motor</td>
+                        <td>$1000</td>
+                        <td class="green" onclick="changeStatus(this)">Finalizado</td>
+                    </tr>
+                    <tr>
+                        <td>Seguro de Prueba</td>
+                        <td>54321</td>
+                        <td>2</td>
+                        <td>2024-05-02</td>
+                        <td>2024-05-04</td>
+                        <td onclick="setCompletionDate(this)">2024-05-06</td>
+                        <td>Chevrolet Corsa</td>
+                        <td>XYZ987</td>
+                        <td>Maria González</td>
+                        <td>Reparación de chapa</td>
+                        <td>$800</td>
+                        <td class="green" onclick="changeStatus(this)">Finalizado</td>
+                    </tr>
+                    <!-- Puedes agregar más ejemplos según sea necesario -->
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container" id="invoicesTable" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Seguro</th>
+                        <th>ORDEN</th>
+                        <th>Fecha</th>
+                        <th>Importe</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ejemplos de facturas -->
+                </tbody>
+            </table>
+        </div>
+        <div class="documents-container" id="documentsSection" style="display: none;">
+            <h2>Envío de Documentación</h2>
+            <form id="documentForm" enctype="multipart/form-data">
+                <!-- Campos de carga de archivos -->
+                <button type="submit">Enviar Documentos</button>
+            </form>
+        </div>
+        <div class="save-button-container" style="display: none;">
+            <button onclick="saveChanges()">Guardar Cambios</button>
+        </div>
+    </div>
+
+    <script src="/JS/JSgestion.js"></script>
+</body>
+
+</html>
