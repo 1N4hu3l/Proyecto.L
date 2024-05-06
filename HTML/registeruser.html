@@ -11,9 +11,9 @@
 <body>
     <div class="container">
         <h1>Registro</h1>
-        <form id="registrationForm">
-            <fieldset id="step1">
-                <legend>Paso 1: Datos del Usuario</legend>
+        <form id="registrationForm" class="form" method="post">
+            <div class="step active">
+                <h2>Paso 1: Datos del Usuario</h2>
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -30,11 +30,10 @@
                     <label for="telefono">Teléfono:</label>
                     <input type="tel" id="telefono" name="telefono" required>
                 </div>
-                <button onclick="nextStep()">Siguiente</button>
-            </fieldset>
-
-            <fieldset id="step2">
-                <legend>Paso 2: Datos del Taller</legend>
+                <button type="button" class="nextButton">Siguiente</button>
+            </div>
+            <div class="step">
+                <h2>Paso 2: Datos del Taller</h2>
                 <div class="form-group">
                     <label for="direccion">Dirección:</label>
                     <input type="text" id="direccion" name="direccion" required>
@@ -46,11 +45,11 @@
                 <div class="form-group">
                     <label for="rubro">Rubro:</label>
                     <select id="rubro" name="rubro" required>
-                        <option value="">Seleccione el Rubro</option>
+                        <option value="">Selecciona...</option>
                         <option value="Taller Mecánico">Taller Mecánico</option>
                         <option value="Chapa y Pintura">Chapa y Pintura</option>
                         <option value="Sacabollos">Sacabollos</option>
-                        <!-- Agrega más opciones según necesites -->
+                        <!-- Agrega más opciones según sea necesario -->
                     </select>
                 </div>
                 <div class="form-group">
@@ -61,12 +60,12 @@
                     <input type="checkbox" id="privacidad" name="privacidad" required>
                     <label for="privacidad">Acepto la política de privacidad</label>
                 </div>
+                <button type="button" class="prevButton">Atrás</button>
                 <button type="submit">Registrarse</button>
-            </fieldset>
+            </div>
         </form>
     </div>
-
-    <script src="script.js"></script>
+    <script src="/JS/JSregister.js"></script>
 </body>
 
 </html>

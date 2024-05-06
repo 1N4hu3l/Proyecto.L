@@ -7,21 +7,20 @@ body {
 }
 
 .container {
+    width: 100%;
     max-width: 600px;
     margin: 0 auto;
+    padding: 20px;
     text-align: center;
 }
 
 h1 {
-    margin-bottom: 30px;
-}
-
-fieldset {
-    border: none;
+    margin-bottom: 20px;
 }
 
 .form-group {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 label {
@@ -31,8 +30,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"],
-select {
+input[type="tel"] {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -41,17 +39,39 @@ select {
 
 button {
     padding: 10px 20px;
-    background-color: #111111;
-    color: #FFFFFF;
+    margin: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button[type="submit"] {
+.nextButton {
     background-color: #4CAF50;
+    color: #FFFFFF;
 }
 
-button[type="submit"]:hover {
-    background-color: #45a049;
+.prevButton {
+    background-color: #f44336;
+    color: #FFFFFF;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+label[for="terminos"],
+label[for="privacidad"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    /* Ajusta el espacio entre el checkbox y el texto si es necesario */
 }
